@@ -5,7 +5,7 @@ const admin = require("firebase-admin");
 const serviceAccount = require("./firebase-admin.json");
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 const MESSAGING_SCOPE = "https://www.googleapis.com/auth/firebase.messaging";
 const SCOPES = [MESSAGING_SCOPE];

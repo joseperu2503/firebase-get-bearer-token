@@ -15,7 +15,22 @@ npm install
 node app
 ```
 
+## Pasos Docker
 
+1. Crear archivo firebase-admin.json
+```bash
+cp firebase-admin.example.json firebase-admin.json
+```
+
+2. Construir la imagen
+```bash
+docker build -t firebase-get-bearer-token:v1 .
+```
+
+3. Ejecutar contenedor
+```bash
+docker run -p 3001:3001 firebase-get-bearer-token:v1
+```
 
 
 
